@@ -1,0 +1,51 @@
+site_name: PSZ ハンズフリーデバイス 機能仕様書
+docs_dir: 'docs'
+copyright: 'Copyright © 2021 NTT TechnoCross Corporation'
+
+extra:
+    version: 0.4
+
+theme:
+    name: material
+    language: ja
+    features:
+        - navigation.expand
+        - toc.integrate
+    feature:
+        tabs: true
+extra:
+    generator: false
+
+nav:
+    - はじめに: index.md
+    - 概要: abstract.md
+    - 要件: requirements.md
+    - 入出力: input_output.md
+    - 電源 ON/OFF: power_on_off.md
+    - 省電力モード: power_saving_mode.md
+    - 電話着信: incoming_call.md
+    - USB 接続: usb_audio.md
+    - Bluetooth 接続: bluetooth_audio.md
+    - ヘッドセット接続: headset_audio.md
+    - ボリューム設定: volume_control.md
+    - マイクミュート: mic_mute.md
+    - 動作モード切替: play_mode.md
+    - LED表示: led_indication.md
+    - 操作音: operation_confirmation_sound.md
+    - ソフトウェア・アップデート: firmware_update.md
+    - リセット: factory_reset.md
+    - 検査モード: diagnostics_mode.md
+
+markdown_extensions:
+    - admonition
+    - codehilite:
+        linenums: true
+        guess_lang: false
+        use_pygments: false
+        noclasses: true
+    - toc:
+        permalink: true
+    - tables
+    - footnotes
+
+use_directory_urls: false

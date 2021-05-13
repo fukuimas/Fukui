@@ -1,0 +1,34 @@
+from: markdown+hard_line_breaks
+to: docx
+output-file: function_design.docx
+input-files:
+    - docs/function_design/docs/index.md
+    - docs/function_design/docs/abstract.md
+    - docs/function_design/docs/requirements.md
+    - docs/function_design/docs/input_output.md
+    - docs/function_design/docs/power_on_off.md
+    - docs/function_design/docs/power_saving_mode.md
+    - docs/function_design/docs/incoming_call.md
+    - docs/function_design/docs/usb_audio.md
+    - docs/function_design/docs/bluetooth_audio.md
+    - docs/function_design/docs/headset_audio.md
+    - docs/function_design/docs/volume_control.md
+    - docs/function_design/docs/mic_mute.md
+    - docs/function_design/docs/play_mode.md
+    - docs/function_design/docs/led_indication.md
+    - docs/function_design/docs/operation_confirmation_sound.md
+    - docs/function_design/docs/firmware_update.md
+    - docs/function_design/docs/factory_reset.md
+    - docs/function_design/docs/diagnostics_mode.md
+resource-path: ["docs/function_design/docs"]
+
+table-of-contents: true
+toc-depth: 2
+number-sections: true
+
+standalone: true
+self-contained: false
+
+fail-if-warnings: true
+
+verbosity: ERROR

@@ -1,0 +1,19 @@
+name: Build documents of function design
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          lfs: true
+      - uses: docker://pandoc/core:2.11.4
+        with:
+          args: -d docs/function_design/pandoc.yml
+      - uses: actions/upload-artifact@v2
+        with:
+          name: function_design
+          path: function_design.docx
+          if-no-files-found: error
